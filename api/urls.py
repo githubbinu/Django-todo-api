@@ -5,6 +5,7 @@ urlpatterns=[
     path('',views.getNotes),
     path('notes/',views.getNotes),
     path('notes/create/',views.creatNote),
+     path('notes/api/create/',views.creatNote),
     path('notes/<str:pk>/update/',views.updateNote),
 
     path('notes/<str:pk>/',views.getNote),
