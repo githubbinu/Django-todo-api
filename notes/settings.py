@@ -19,7 +19,7 @@ SECRET_KEY = 'django-insecure-f+#syb5d$r1ie9nn#k+1w-m$iqy4(jfxemvgz9m6^_w%75&d&g
 DEBUG = True
 
 ALLOWED_HOSTS = []
-AUTH_USER_MODEL = 'api.userProfile'
+
 
 # Application definition
 
@@ -31,8 +31,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
-     'rest_framework_simplejwt',
-    'rest_framework.authtoken',
      'rest_framework',
       "corsheaders",
     
@@ -117,11 +115,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
-}
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
